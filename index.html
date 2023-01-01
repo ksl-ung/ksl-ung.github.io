@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Kelompok Studi Linux (KSL) adalah organisasi mahasiswa intra kampus yang merupakan kelompok studi tingkat fakultas Teknik Universitas Negeri Gorontalo, KSL menjadi wadah mahasiswa untuk mengembangkan bakat dan kemampuan yang dimiliki agar menjadi mahasiswa yang memiliki softskill dan mampu menghasilkan prestasi di bidang akademik maupun non akademik."
+    />
+    <link rel="canonical" href="https://kslung.com" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KSL UNG" />
+    <meta
+      property="og:description"
+      content="Kelompok Studi Linux (KSL) adalah organisasi mahasiswa intra kampus yang merupakan kelompok studi tingkat fakultas Teknik Universitas Negeri Gorontalo, KSL menjadi wadah mahasiswa untuk mengembangkan bakat dan kemampuan yang dimiliki agar menjadi mahasiswa yang memiliki softskill dan mampu menghasilkan prestasi di bidang akademik maupun non akademik."
+    />
+    <meta property="og:url" content="https://kslung.com" />
+    <meta
+      property="og:site_name"
+      content="Kelompok Studi Linux Universitas Negeri Gorontalo"
+    />
+    <meta property="og:image" content="/img/logo/ksl-logo.png" />
+    <meta property="og:image:secure_url" content="/img/logo/ksl-logo.png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:description"
+      content="Kelompok Studi Linux (KSL) adalah organisasi mahasiswa intra kampus yang merupakan kelompok studi tingkat fakultas Teknik Universitas Negeri Gorontalo, KSL menjadi wadah mahasiswa untuk mengembangkan bakat dan kemampuan yang dimiliki agar menjadi mahasiswa yang memiliki softskill dan mampu menghasilkan prestasi di bidang akademik maupun non akademik."
+    />
+    <meta name="twitter:title" content="KSL UNG" />
+    <meta name="twitter:site" content="https://kslung.com" />
+    <meta name="twitter:image" content="/img/logo/ksl-logo.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Bootstrap 5.2.2 -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome 6.2.0 -->
+    <link rel="stylesheet" href="/css/fontawesome.all.min.css" />
+
+    <!-- FONT: Monument Extended -->
+    <style>
+      @font-face {
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 400;
+        src: url("/fonts/Monument Extended Regular.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: monument extended;
+        font-style: normal;
+        font-weight: 700;
+        src: url("/fonts/Monument Extended Bold.woff") format("woff");
+      }
+    </style>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="/css/aos.css" />
+    <title>KSL UNG</title>
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <nav
+        class="font-ksl navbar navbar-expand-lg bg-transparent navbar-dark px-3 pt-4 pt-md-0"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand fs-4 d-flex justify-content-center align-items-center gap-4"
+            href="#"
+          >
+            <img
+              src="/img/logo/ksl-logo.png"
+              alt="Logo"
+              style="height: 2em; width: 2em; object-fit: contain"
+              class="d-inline-block align-text-top fs-4"
+            />
+            <span class="d-none d-sm-flex align-items-center gap-2">
+              KSL <span class="text-outline"> UNG </span>
+            </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto fs-5 align-items-center">
+              <a class="nav-link px-4 py-5 active" aria-current="page" href="/">
+                Home
+              </a>
+              <!-- <button
+                type="button"
+                class="btn btn-outline-primary d-flex align-items-center text-uppercase ms-md-4 py-2 px-3"
+                onclick="loginModal.show(); return false;"
+              >
+                Login
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <header class="page-header pt-5 pt-md-0">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-md-6 d-flex text-center text-md-start flex-column justify-content-center align-items-md-start align-items-center"
+            >
+              <h1 class="fw-bold text-uppercase">Kelompok Studi&nbsp;Linux</h1>
+              <h4 class="fw-bold mb-4">Universitas Negeri Gorontalo</h4>
+              <!-- Countdown -->
+              <!-- <p class="fs-6 m-0">Pendaftaran ditutup dalam</p>
+              <table border="0">
+                <tr class="display-1 font-ksl">
+                  <td><span id="jam">00</span></td>
+                  <td>:</td>
+                  <td><span id="menit">00</span></td>
+                  <td>:</td>
+                  <td><span id="detik">00</span></td>
+                </tr>
+                <tr class="text-center">
+                  <td>JAM</td>
+                  <td></td>
+                  <td>MENIT</td>
+                  <td></td>
+                  <td>DETIK</td>
+                </tr>
+              </table>
+
+              <button
+                class="btn btn-primary btn-xl mt-4 font-ksl"
+                onclick="regisModal.show(); return false;"
+              >
+                Gabung sekarang
+              </button> -->
+
+              <p class="text-justify text-md-start fs-5">
+                KSL menjadi wadah mahasiswa untuk mengembangkan bakat yang
+                dimiliki agar menjadi mahasiswa yang berprestasi di bidang
+                akademik maupun non akademik.
+              </p>
+            </div>
+            <div class="col-md-6 text-end">
+              <img
+                id="waifu-image"
+                class="rounded"
+                src="/img/skipper.png"
+                style="
+                  width: 100%;
+                  max-height: min(calc(100vh - 150px), calc(100vmin - 100px));
+                  object-fit: contain;
+                "
+                alt="Penguin Bandar"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section
+        class="container text-center d-flex flex-column justify-content-center"
+      >
+        <div class="row">
+          <div class="col">
+            <h3
+              class="text-uppercase my-5 mt-md-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Tentang
+            </h3>
+          </div>
+        </div>
+        <div
+          class="row justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="100"
+        >
+          <div class="col-md-8">
+            <p class="lh-base">
+              Kelompok Studi Linux (KSL) merupakan kelompok studi tingkat
+              fakultas Teknik Universitas Negeri Gorontalo, KSL menjadi wadah
+              mahasiswa untuk mengembangkan bakat dan kemampuan yang dimiliki
+              agar menjadi mahasiswa yang memiliki softskill dan mampu
+              menghasilkan prestasi di bidang akademik maupun non akademik.
+            </p>
+          </div>
+          <div class="col-md-8 d-none d-md-block">
+            <p class="lh-base">
+              Dalam menunjang prestasi anggota Kelompok Studi linux (KSL) yang
+              berfokus dalam pengembangan diri, terdapat 3 divisi dalam KSL
+              yaitu divisi Multimedia, Networking dan Programming. Ketiga divisi
+              ini berfokus pada peningkatan skill, tidak hanya ini seluruh
+              anggota Kelompok Studi Linux juga mendapatkan kesempatan khusus
+              untuk ikut dan mendapat pendampingan dalam Pekan Kreatifitas
+              Mahasiswa (PKM), Pegelaran Mahasiswa TIK (Gemastik) dan kompetisi
+              bergengsi lainnya.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Division's Grid-->
+      <section class="container d-flex flex-column justify-content-center">
+        <div class="text-center">
+          <h5
+            class="section-subheading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Kelompok Studi Linux 2022
+          </h5>
+          <h2
+            class="section-heading text-uppercase"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Divisi-divisi
+          </h2>
+        </div>
+        <div
+          class="row gap-md-5 justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <!-- Divisi Multimedia -->
+          <div class="col-lg-3 col-7 mb-4 divisi text-center mt-5">
+            <img
+              src="/img/divisi/multimedia.png"
+              class="card-img-top img-divisi w-75 mb-4"
+              alt="Multimedia"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#multimediaModal"
+            />
+            <h4>Multimedia</h4>
+          </div>
+
+          <!-- Divisi Networking -->
+          <div class="col-lg-3 col-7 mb-4 divisi text-center mt-5">
+            <img
+              src="/img/divisi/networking.png"
+              class="card-img-top img-divisi w-75 mb-4"
+              alt="Networking"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#networkingModal"
+            />
+            <h4>Networking</h4>
+          </div>
+
+          <!-- Divisi Programming -->
+          <div class="col-lg-3 col-7 mb-4 divisi text-center mt-5">
+            <img
+              src="/img/divisi/programming.png"
+              class="card-img-top img-divisi w-75 mb-4"
+              alt="Programming"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#programmingModal"
+            />
+            <h4>Programming</h4>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container bottom-wrapper d-flex flex-column align-items-center text-center justify-content-center"
+      >
+        <h3 class="fs-md-1 fs-4" data-aos="fade-up" data-aos-duration="1000">
+          Kelompok Studi Linux
+        </h3>
+        <h4 class="fs-md-3 fs-6" data-aos="fade-up" data-aos-duration="1000">
+          Universitas Negeri Gorontalo
+        </h4>
+        <div
+          class="dragAble mt-5"
+          id="penguinDrag"
+          style="transition-timing-function: ease; transition-duration: 0.3s"
+        >
+          <img src="/img/skipper.png" style="width: 50px; height: 90px" />
+        </div>
+      </section>
+    </main>
+    <footer class="px-md-5 pt-5 px-4">
+      <div
+        class="row justify-content-md-between justify-content-center mb-md-5 mb-4 gap-3"
+      >
+        <div
+          class="row col-md-5 gap-1 align-items-center text-center text-md-start"
+        >
+          <div class="col-md-4">
+            <h6>KSL <span class="text-outline">UNG</span></h6>
+          </div>
+          <!-- if masih bisa daftar -->
+          <!-- <div class="col-md-6">
+            <button class="gabung-ges-button" onclick="regisModal.show();">
+              GABUNG GES
+            </button>
+          </div> -->
+        </div>
+        <div
+          class="fs-2 col-md-4 gap-5 d-flex justify-content-md-end justify-content-center"
+        >
+          <a
+            href="https://instagram.com/ksl.ung"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://bit.ly/discordkslung"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/triputrafauzanradji"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="teks-kecil py-3 d-flex flex-md-row flex-column text-md-start text-center justify-content-between"
+      >
+        <p>Copyright Kelompok Studi&nbsp;Linux 2022</p>
+        <p>Privacy & Policy</p>
+      </div>
+    </footer>
+
+    <!-- Modal Multimedia -->
+    <div
+      class="modal fade"
+      id="multimediaModal"
+      tabindex="-1"
+      aria-labelledby="Multimedia"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close float-end"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="/img/divisi/multimedia.png"
+              style="max-width: 75%"
+              class="mx-auto d-block"
+              alt="Multimedia"
+            />
+            <h5 class="text-dark text-uppercase fw-bold text-center">
+              Divisi Multimedia
+            </h5>
+            <p class="text-dark">
+              Divisi yang secara khusus dibuat untuk mendalami disiplin ilmu
+              tentang Multimedia seperti Graphic Design, Video Editing,
+              Tipografi, Audio Editing, dan lain sebagainya.
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Networking -->
+    <div
+      class="modal fade"
+      id="networkingModal"
+      tabindex="-1"
+      aria-labelledby="Networking"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="/img/divisi/networking.png"
+              style="max-width: 75%"
+              class="mx-auto d-block"
+              alt="Networking"
+            />
+            <h5 class="text-dark text-uppercase fw-bold text-center">
+              Divisi Networking
+            </h5>
+            <p class="text-dark">
+              Divisi yang secara khusus dibuat untuk mendalami disiplin ilmu
+              tentang pengembangan Jaringan Komputer seperti LAN, Wireless
+              Connection, Network Configuration, dan lain sebagainya.
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Programming -->
+    <div
+      class="modal fade"
+      id="programmingModal"
+      tabindex="-1"
+      aria-labelledby="Programming"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="/img/divisi/programming.png"
+              style="max-width: 75%"
+              class="mx-auto d-block"
+              alt="Programming"
+            />
+            <h5 class="text-dark text-uppercase fw-bold text-center">
+              Divisi Programming
+            </h5>
+            <p class="text-dark">
+              Divisi yang secara khusus dibuat untuk mendalami disiplin ilmu
+              tentang pengembangan program komputer seperti Web Apps, Desktop
+              Apps, Mobile Apps, dan lain sebagainya.
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Custom JS -->
+    <script>
+      // Easter Egg
+      const waifuImage = document.getElementById("waifu-image");
+      let isWaifu = false;
+      waifuImage.addEventListener("click", () => {
+        waifuImage.src = `/img/${isWaifu ? "skipper.png" : "mina-grad.png"}`;
+        isWaifu = !isWaifu;
+      });
+
+      // Countdown
+      // const elemenCountdown = {
+      //   hours: document.getElementById("jam"),
+      //   minutes: document.getElementById("menit"),
+      //   seconds: document.getElementById("detik"),
+      // };
+
+      // const countdownTime = new Date("2023-10-20 08:00:00").getTime();
+      // let time = countdown(countdownTime);
+      // if ([time.hours, time.minutes, time.seconds].some((time) => time > 0)) {
+      //   updateCountdown(time);
+
+      //   const countInterval = setInterval(() => {
+      //     time = countdown(countdownTime);
+      //     if (
+      //       [time.hours, time.minutes, time.seconds].every((time) => time <= 0)
+      //     ) {
+      //       clearInterval(countInterval);
+      //       setTimeout(() => {
+      //         location.reload();
+      //       }, 2 * 1000);
+      //     }
+      //     updateCountdown(time);
+      //   }, 1000);
+      // }
+
+      function countdown(countdownTime) {
+        // Get today's date and time
+        const now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        const distance = countdownTime - now;
+
+        // Time calculations for hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours =
+          Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) +
+          days * 24;
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        return { hours, minutes, seconds };
+      }
+
+      function updateCountdown({ hours, minutes, seconds }) {
+        elemenCountdown.hours.textContent = hours < 10 ? "0" + hours : hours;
+        elemenCountdown.minutes.textContent =
+          minutes < 10 ? "0" + minutes : minutes;
+        elemenCountdown.seconds.textContent =
+          seconds < 10 ? "0" + seconds : seconds;
+      }
+    </script>
+
+    <script src="/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Drag animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
+    <script>
+      Draggable.create("#penguinDrag", {
+        inertia: true,
+        bounds: "html",
+      });
+    </script>
+  </body>
+</html>

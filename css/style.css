@@ -1,0 +1,91 @@
+body {
+    color: #fff;
+    /* min-height: calc(100vh + 229px); */
+    position: relative;
+}
+
+.wrapper {
+    background-image: url("../img/bg_ksl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: calc(100vh - 134px);
+}
+
+section {
+    min-height: 100vh;
+}
+
+.text-outline {
+    -webkit-text-stroke-color: #fff;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+.divisi {
+    filter: drop-shadow(8px 8px 4px #131122);
+}
+
+.card {
+    outline-style: none;
+    background-color: transparent;
+}
+
+.divisi {
+    transition: transform 0.2s;
+}
+
+.divisi:hover {
+    transform: scale(1.2);
+}
+
+.btn-outline-primary {
+    color: #fff;
+}
+
+.bottom-wrapper {
+    min-height: 80vh;
+    background-image: radial-gradient(#0006, transparent, transparent);
+}
+
+.bottom-wrapper > * {
+    text-shadow: 0 0 20px #000, 0 0 20px #000, 0 0 20px #000;
+}
+
+footer {
+    padding: 5em;
+    padding-bottom: 0;
+    background-color: #252525;
+    color: #fff;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+}
+
+footer .gabung-ges-button {
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    background-image: linear-gradient(to right, #081b5d, #1850b4);
+    color: inherit;
+}
+
+footer .gabung-ges-button:hover {
+    opacity: 0.7;
+}
+
+footer i {
+    color: #fff;
+}
+
+footer i:hover {
+    opacity: 0.7;
+}
+
+footer .teks-kecil {
+    font-family: "Poppins";
+    font-size: 0.8em;
+}

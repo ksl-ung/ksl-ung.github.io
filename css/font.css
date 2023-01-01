@@ -1,0 +1,21 @@
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-ksl {
+    font-family: "Monument Extended", "Segoe UI", sans-serif !important;
+}
+
+.modal-body {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
