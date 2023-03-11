@@ -129,14 +129,9 @@
       </header>
 
       <section class="container d-flex flex-column">
-        <form method="post">
+        <form id="form">
           <div class="row">
-            <div
-              class="col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="0"
-            >
+            <div class="col-md-6">
               <div
                 class="card mb-3"
                 style="
@@ -157,6 +152,7 @@
                       id="project_name"
                       name="project_name"
                       placeholder="Nama Project"
+                      autofocus
                     />
                     <div class="form-text">
                       Isikan nama project, program, atau aplikasi
@@ -175,8 +171,9 @@
                       <option value="" hidden>Tipe/Kategori Project</option>
                       <option value="REST API">REST API</option>
                       <optgroup label="Web">
-                        <option value="Web App">Web App</option>
                         <option value="Web Site">Web Site</option>
+                        <option value="Web App">Web App</option>
+                        <option value="Web Game">Web Game</option>
                       </optgroup>
                       <optgroup label="Desktop">
                         <option value="Desktop App">Desktop App</option>
@@ -211,12 +208,7 @@
               </div>
             </div>
 
-            <div
-              class="col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="100"
-            >
+            <div class="col-md-6">
               <div
                 class="card mb-3"
                 style="
@@ -237,8 +229,9 @@
                       id="dev_name"
                       name="dev_name"
                       placeholder="Nama Pengembang"
+                      aria-describedby="dev_name_help"
                     />
-                    <div class="form-text">
+                    <div class="form-text" id="dev_name_help">
                       Tuliskan nama tim jika bekerja bersama tim
                     </div>
                   </div>
@@ -248,6 +241,7 @@
                       >Anggota Tim</label
                     >
                     <input
+                      required
                       type="text"
                       class="form-control"
                       id="dev_teams"
@@ -286,12 +280,7 @@
             </div>
           </div>
 
-          <div
-            class="row justify-content-center"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="200"
-          >
+          <div class="row justify-content-center">
             <div class="col-md-6">
               <div
                 class="card mb-3"
@@ -365,9 +354,7 @@
     ></script>
 
     <!-- Custom JS -->
-    <script>
-      console.log("Hello world");
-    </script>
+    <script src="/js/showcase-form.js"></script>
 
     <script src="/js/aos.js"></script>
     <script>
