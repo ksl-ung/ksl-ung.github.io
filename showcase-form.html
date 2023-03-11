@@ -38,6 +38,9 @@
     <!-- Bootstrap 5.2.2 -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
 
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/css/sweetalert2.min.css" />
+
     <!-- Font Awesome 6.2.0 -->
     <link rel="stylesheet" href="/css/fontawesome.all.min.css" />
 
@@ -292,7 +295,22 @@
               >
                 <div class="card-body text-center">
                   <button type="reset" class="btn btn-secondary">Reset</button>
-                  <button type="submit" class="btn btn-primary">Kirim</button>
+                  <button type="submit" class="btn btn-primary" id="submit">
+                    Kirim
+                  </button>
+                  <button
+                    class="btn btn-primary d-none"
+                    type="button"
+                    id="spinner"
+                    disabled
+                  >
+                    <span
+                      class="spinner-border spinner-border-sm"
+                      role="status"
+                      aria-hidden="true"
+                    ></span>
+                    Mengirim...
+                  </button>
                 </div>
               </div>
             </div>
@@ -346,12 +364,10 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="/js/sweetalert2.all.min.js"></script>
 
     <!-- Custom JS -->
     <script src="/js/showcase-form.js"></script>
@@ -361,8 +377,8 @@
       AOS.init();
     </script>
     <!-- Drag animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/Draggable.min.js"></script>
     <script>
       Draggable.create("#penguinDrag", {
         inertia: true,

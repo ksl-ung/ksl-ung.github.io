@@ -9,19 +9,34 @@ const inputs = [
   document.getElementById("dev_teams"),
   document.getElementById("dev_division"),
 ];
+const buttons = {
+  submit: document.getElementById("submit"),
+  spinner: document.getElementById("spinner"),
+};
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const formData = new FormData(form);
-  fetch(scriptURL, { method: "POST", body: formData })
+
+  // hide submit button
+  buttons.submit.classList.add("d-none");
+  // show spinner button
+  buttons.spinner.classList.remove("d-none");
+
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((res) => res.json())
     .then((res) => {
-      if (res.result === "success") alert("Success");
-      else alert("Error");
+      if (res.result === "success") {
+        success("Berhasil menyimpan data");
+        reset();
+      } else error("Gagal menambahkan data");
     })
     .catch((err) => {
       console.error("Error!", err.message);
-      alert("Error");
+      error("Gagal menambahkan data");
+    })
+    .finally(() => {
+      buttons.submit.classList.remove("d-none");
+      buttons.spinner.classList.add("d-none");
     });
 });
 
@@ -38,3 +53,26 @@ inputs.forEach((input) => {
 inputs.forEach((input) => {
   input.value = localStorage.getItem(input.name) || "";
 });
+
+function success(msg) {
+  Swal.fire({
+    icon: "success",
+    title: "Sukses",
+    text: msg,
+  });
+}
+
+function error(msg) {
+  Swal.fire({
+    icon: "error",
+    title: "Error",
+    text: msg,
+  });
+}
+
+function reset() {
+  form.reset();
+  inputs.forEach((input) => {
+    localStorage.setItem(input.name, "");
+  });
+}
