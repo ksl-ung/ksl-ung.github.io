@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Kelompok Studi Linux (KSL) adalah organisasi mahasiswa intra kampus yang merupakan kelompok studi tingkat fakultas Teknik Universitas Negeri Gorontalo, KSL menjadi wadah mahasiswa untuk mengembangkan bakat dan kemampuan yang dimiliki agar menjadi mahasiswa yang memiliki softskill dan mampu menghasilkan prestasi di bidang akademik maupun non akademik."
+    />
+    <link rel="canonical" href="https://kslung.com" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KSL UNG" />
+    <meta
+      property="og:description"
+      content="Kelompok Studi Linux (KSL) adalah organisasi mahasiswa intra kampus yang merupakan kelompok studi tingkat fakultas Teknik Universitas Negeri Gorontalo, KSL menjadi wadah mahasiswa untuk mengembangkan bakat dan kemampuan yang dimiliki agar menjadi mahasiswa yang memiliki softskill dan mampu menghasilkan prestasi di bidang akademik maupun non akademik."
+    />
+    <meta property="og:url" content="https://kslung.com" />
+    <meta
+      property="og:site_name"
+      content="Kelompok Studi Linux Universitas Negeri Gorontalo"
+    />
+    <meta property="og:image" content="/img/logo/ksl-logo.png" />
+    <meta property="og:image:secure_url" content="/img/logo/ksl-logo.png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:description"
+      content="Kelompok Studi Linux (KSL) adalah organisasi mahasiswa intra kampus yang merupakan kelompok studi tingkat fakultas Teknik Universitas Negeri Gorontalo, KSL menjadi wadah mahasiswa untuk mengembangkan bakat dan kemampuan yang dimiliki agar menjadi mahasiswa yang memiliki softskill dan mampu menghasilkan prestasi di bidang akademik maupun non akademik."
+    />
+    <meta name="twitter:title" content="KSL UNG" />
+    <meta name="twitter:site" content="https://kslung.com" />
+    <meta name="twitter:image" content="/img/logo/ksl-logo.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Bootstrap 5.2.2 -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome 6.2.0 -->
+    <link rel="stylesheet" href="/css/fontawesome.all.min.css" />
+
+    <!-- FONT: Monument Extended -->
+    <style>
+      @font-face {
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 400;
+        src: url("/fonts/Monument Extended Regular.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 700;
+        src: url("/fonts/Monument Extended Bold.woff") format("woff");
+      }
+    </style>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/showcase-form.css" />
+
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="/css/aos.css" />
+    <title>KSL UNG | Showcase</title>
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <nav
+        class="font-ksl navbar navbar-expand-lg bg-transparent navbar-dark px-3 pt-4"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand fs-4 d-flex justify-content-center align-items-center gap-4"
+            href="#"
+          >
+            <img
+              src="/img/logo/ksl-logo.png"
+              alt="Logo"
+              style="height: 2em; width: 2em; object-fit: contain"
+              class="d-inline-block align-text-top fs-4"
+            />
+            <span class="d-none d-sm-flex align-items-center gap-2">
+              KSL <span class="text-outline"> UNG </span>
+            </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto fs-5 align-items-center">
+              <a class="nav-link px-4 py-3" href="/"> Home </a>
+              <a
+                class="nav-link px-4 py-3 active"
+                aria-current="page"
+                href="/showcase-form.html"
+              >
+                Showcase
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <header class="page-header pt-5 pt-md-0">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-md-6 d-flex text-center flex-column justify-content-center align-items-center"
+            >
+              <h1 class="fw-bold text-uppercase">Form</h1>
+              <h4 class="fw-bold mb-4">Showcase Project</h4>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="container d-flex flex-column">
+        <form method="post">
+          <div class="row">
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="0"
+            >
+              <div
+                class="card mb-3"
+                style="
+                  background-color: #0006;
+                  border: 1px solid #fff8;
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="card-body">
+                  <h5 class="card-title text-center">Project</h5>
+
+                  <div class="mb-3">
+                    <label for="project_name" class="form-label">Nama</label>
+                    <input
+                      required
+                      type="text"
+                      class="form-control"
+                      id="project_name"
+                      name="project_name"
+                      placeholder="Nama Project"
+                    />
+                    <div class="form-text">
+                      Isikan nama project, program, atau aplikasi
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="project_type" class="form-label">Tipe</label>
+                    <select
+                      required
+                      type="text"
+                      class="form-control"
+                      id="project_type"
+                      name="project_type"
+                    >
+                      <option value="" hidden>Tipe/Kategori Project</option>
+                      <option value="REST API">REST API</option>
+                      <optgroup label="Web">
+                        <option value="Web App">Web App</option>
+                        <option value="Web Site">Web Site</option>
+                      </optgroup>
+                      <optgroup label="Desktop">
+                        <option value="Desktop App">Desktop App</option>
+                        <option value="Desktop Game">Desktop Game</option>
+                      </optgroup>
+                      <optgroup label="Mobile">
+                        <option value="Mobile App">Mobile App</option>
+                        <option value="Mobile Game">Mobile Game</option>
+                      </optgroup>
+                      <option value="Lainnya">Lainnya</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="project_repo" class="form-label"
+                      >Repository URL</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      class="form-control"
+                      id="project_repo"
+                      name="project_repo"
+                      placeholder="https://github.com/username/repo"
+                      aria-describedby="project_repo_help"
+                    />
+                    <div class="form-text" id="project_repo_help">
+                      Isikan url repository Github, Gitlab, atau lainnya
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="100"
+            >
+              <div
+                class="card mb-3"
+                style="
+                  background-color: #0006;
+                  border: 1px solid #fff8;
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="card-body">
+                  <h5 class="card-title text-center">Developer</h5>
+
+                  <div class="mb-3">
+                    <label for="dev_name" class="form-label">Nama</label>
+                    <input
+                      required
+                      type="text"
+                      class="form-control"
+                      id="dev_name"
+                      name="dev_name"
+                      placeholder="Nama Pengembang"
+                    />
+                    <div class="form-text">
+                      Tuliskan nama tim jika bekerja bersama tim
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="dev_teams" class="form-label"
+                      >Anggota Tim</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dev_teams"
+                      name="dev_teams"
+                      placeholder="Nama-nama anggota tim"
+                    />
+                    <div class="form-text">
+                      Tuliskan nama sendiri jika tidak bekerja tim
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="dev_division" class="form-label">Divisi</label>
+                    <select
+                      required
+                      type="text"
+                      class="form-control"
+                      id="dev_division"
+                      name="dev_division"
+                    >
+                      <option value="" hidden>Divisi di KSL</option>
+                      <option value="Programming">Programming</option>
+                      <option value="Networking">Networking</option>
+                      <option value="Multimedia">Multimedia</option>
+                      <option value="Antar Divisi">Antar Divisi</option>
+                      <option value="Lainnya">Lainnya</option>
+                    </select>
+                    <div class="form-text">
+                      Pilih <b>Antar Divisi</b> jika para pengembang berasal
+                      dari divisi yang berbeda. Pilih <b>Lainnya</b> jika
+                      pengembang bukan berasal dari KSL
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <div class="col-md-6">
+              <div
+                class="card mb-3"
+                style="
+                  background-color: #0006;
+                  border: 1px solid #fff8;
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="card-body text-center">
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                  <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="px-md-5 pt-5 px-4">
+      <div
+        class="row justify-content-md-between justify-content-center mb-md-5 mb-4 gap-3"
+      >
+        <div
+          class="row col-md-5 gap-1 align-items-center text-center text-md-start"
+        >
+          <div class="col-md-4">
+            <h6>KSL <span class="text-outline">UNG</span></h6>
+          </div>
+        </div>
+        <div
+          class="fs-2 col-md-4 gap-5 d-flex justify-content-md-end justify-content-center"
+        >
+          <a
+            href="https://instagram.com/ksl.ung"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://bit.ly/discordkslung"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/triputrafauzanradji"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="teks-kecil py-3 d-flex flex-md-row flex-column text-md-start text-center justify-content-between"
+      >
+        <p>Copyright Kelompok Studi&nbsp;Linux 2022</p>
+        <p>Privacy & Policy</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Custom JS -->
+    <script>
+      console.log("Hello world");
+    </script>
+
+    <script src="/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Drag animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
+    <script>
+      Draggable.create("#penguinDrag", {
+        inertia: true,
+        bounds: "html",
+      });
+    </script>
+  </body>
+</html>

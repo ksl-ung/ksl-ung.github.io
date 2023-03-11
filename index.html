@@ -51,7 +51,7 @@
       }
 
       @font-face {
-        font-family: monument extended;
+        font-family: "Monument Extended";
         font-style: normal;
         font-weight: 700;
         src: url("/fonts/Monument Extended Bold.woff") format("woff");
@@ -61,6 +61,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/font.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/index.css" />
 
     <!-- AOS animation -->
     <link rel="stylesheet" href="/css/aos.css" />
@@ -70,7 +71,7 @@
   <body>
     <main class="wrapper">
       <nav
-        class="font-ksl navbar navbar-expand-lg bg-transparent navbar-dark px-3 pt-4 pt-md-0"
+        class="font-ksl navbar navbar-expand-lg bg-transparent navbar-dark px-3 pt-4"
       >
         <div class="container">
           <a
@@ -100,16 +101,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto fs-5 align-items-center">
-              <a class="nav-link px-4 py-5 active" aria-current="page" href="/">
+              <a class="nav-link px-4 py-3 active" aria-current="page" href="/">
                 Home
               </a>
-              <!-- <button
-                type="button"
-                class="btn btn-outline-primary d-flex align-items-center text-uppercase ms-md-4 py-2 px-3"
-                onclick="loginModal.show(); return false;"
+              <a
+                class="nav-link px-4 py-3"
+                aria-current="page"
+                href="/showcase-form.html"
               >
-                Login
-              </button> -->
+                Showcase
+              </a>
             </div>
           </div>
         </div>
@@ -124,31 +125,6 @@
             >
               <h1 class="fw-bold text-uppercase">Kelompok Studi&nbsp;Linux</h1>
               <h4 class="fw-bold mb-4">Universitas Negeri Gorontalo</h4>
-              <!-- Countdown -->
-              <!-- <p class="fs-6 m-0">Pendaftaran ditutup dalam</p>
-              <table border="0">
-                <tr class="display-1 font-ksl">
-                  <td><span id="jam">00</span></td>
-                  <td>:</td>
-                  <td><span id="menit">00</span></td>
-                  <td>:</td>
-                  <td><span id="detik">00</span></td>
-                </tr>
-                <tr class="text-center">
-                  <td>JAM</td>
-                  <td></td>
-                  <td>MENIT</td>
-                  <td></td>
-                  <td>DETIK</td>
-                </tr>
-              </table>
-
-              <button
-                class="btn btn-primary btn-xl mt-4 font-ksl"
-                onclick="regisModal.show(); return false;"
-              >
-                Gabung sekarang
-              </button> -->
 
               <p class="text-justify text-md-start fs-5">
                 KSL menjadi wadah mahasiswa untuk mengembangkan bakat yang
@@ -310,12 +286,6 @@
           <div class="col-md-4">
             <h6>KSL <span class="text-outline">UNG</span></h6>
           </div>
-          <!-- if masih bisa daftar -->
-          <!-- <div class="col-md-6">
-            <button class="gabung-ges-button" onclick="regisModal.show();">
-              GABUNG GES
-            </button>
-          </div> -->
         </div>
         <div
           class="fs-2 col-md-4 gap-5 d-flex justify-content-md-end justify-content-center"
@@ -469,12 +439,7 @@
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
     <script>
@@ -485,58 +450,6 @@
         waifuImage.src = `/img/${isWaifu ? "skipper.png" : "mina-grad.png"}`;
         isWaifu = !isWaifu;
       });
-
-      // Countdown
-      // const elemenCountdown = {
-      //   hours: document.getElementById("jam"),
-      //   minutes: document.getElementById("menit"),
-      //   seconds: document.getElementById("detik"),
-      // };
-
-      // const countdownTime = new Date("2023-10-20 08:00:00").getTime();
-      // let time = countdown(countdownTime);
-      // if ([time.hours, time.minutes, time.seconds].some((time) => time > 0)) {
-      //   updateCountdown(time);
-
-      //   const countInterval = setInterval(() => {
-      //     time = countdown(countdownTime);
-      //     if (
-      //       [time.hours, time.minutes, time.seconds].every((time) => time <= 0)
-      //     ) {
-      //       clearInterval(countInterval);
-      //       setTimeout(() => {
-      //         location.reload();
-      //       }, 2 * 1000);
-      //     }
-      //     updateCountdown(time);
-      //   }, 1000);
-      // }
-
-      function countdown(countdownTime) {
-        // Get today's date and time
-        const now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        const distance = countdownTime - now;
-
-        // Time calculations for hours, minutes and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours =
-          Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) +
-          days * 24;
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        return { hours, minutes, seconds };
-      }
-
-      function updateCountdown({ hours, minutes, seconds }) {
-        elemenCountdown.hours.textContent = hours < 10 ? "0" + hours : hours;
-        elemenCountdown.minutes.textContent =
-          minutes < 10 ? "0" + minutes : minutes;
-        elemenCountdown.seconds.textContent =
-          seconds < 10 ? "0" + seconds : seconds;
-      }
     </script>
 
     <script src="/js/aos.js"></script>
@@ -544,8 +457,8 @@
       AOS.init();
     </script>
     <!-- Drag animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/Draggable.min.js"></script>
     <script>
       Draggable.create("#penguinDrag", {
         inertia: true,

@@ -1,0 +1,33 @@
+header {
+  height: calc(100vh - 134px);
+}
+
+.divisi {
+  filter: drop-shadow(8px 8px 4px #131122);
+}
+
+.card {
+  outline-style: none;
+  background-color: transparent;
+}
+
+.divisi {
+  transition: transform 0.2s;
+}
+
+.divisi:hover {
+  transform: scale(1.2);
+}
+
+.btn-outline-primary {
+  color: #fff;
+}
+
+.bottom-wrapper {
+  min-height: 80vh;
+  background-image: radial-gradient(#0006, transparent, transparent);
+}
+
+.bottom-wrapper > * {
+  text-shadow: 0 0 20px #000, 0 0 20px #000, 0 0 20px #000;
+}

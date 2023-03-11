@@ -1,0 +1,19 @@
+/* OPTIONAL LABEL */
+div:has(> :where(input, select):not(:required)) label::after {
+  content: " (opsional)";
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  color: #8f8;
+}
+
+/* REQUIRED LABEL */
+div:has(> :where(input, select):required) label::after {
+  content: "*";
+  color: #f88;
+}
+
+.form-text {
+  color: #aff;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+}
